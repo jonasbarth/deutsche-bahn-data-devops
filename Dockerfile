@@ -10,7 +10,7 @@ ENV VIRTUAL_ENV=.venv
 RUN python -m venv $VIRTUAL_ENV
 RUN chmod +x $VIRTUAL_ENV/bin/activate
 
-ENV PATH="$VIRTUAL_ENV/bin:$PATH
+ENV PATH="$VIRTUAL_ENV/bin:$PATH"
 
 RUN pip install -r requirements.txt
 
