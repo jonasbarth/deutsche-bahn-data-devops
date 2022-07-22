@@ -6,6 +6,7 @@ COPY . .
 ADD https://github.com/jonasbarth/deutsche-bahn-station/blob/main/src/proto/station.proto .
 
 RUN python -m venv .venv
+RUN chmod +x .venv/bin/activate
 RUN .venv/bin/activate
 RUN pip install -r requirements.txt
 
